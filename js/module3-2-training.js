@@ -1,12 +1,77 @@
 // 1. Напиши функцію, яка приймає довільну кількість чисел і повертає кількість
 //    непарних чисел серед них.
 
+console.log('task 1');
+
+function countOdd() {
+    let total = 0;
+    for (const item of arguments) {
+        if (item % 2 !== 0) {
+        total++
+        }
+    }
+    return total;
+}
+
+console.log(countOdd(1, 2, 3, 4, 5, 6, 7, 8, 9));
+
 // 1. Напиши функцію яка приймає довільну кількість рядочків і повертає той рядок
 //    що є найдовшим
+
+console.log('task 2');
+
+function findLongest() {
+    let theLongestWord = '';
+    for (const word of arguments) {
+        if (word.length > theLongestWord.length) {
+            theLongestWord = word;
+        }
+    }
+    return theLongestWord
+}
+
+console.log(findLongest('hello', 'word', 'test'));
+
 // 1. Напиши функцію яка приймає довільну кількість рядочків і обєднує їх в один
 //    цілий рядок.
+
+console.log('task 3-1');
+
+function makeStr() {
+    let newString = '';
+    for (const string of arguments) {
+        newString += string;
+    }
+    return newString;
+}
+
+console.log(makeStr('make ', 'me ', 'a ', 'sandwich'));
+
+console.log('task 3-2');
+
+function makeStrFromArr() {
+    let newArr = [];
+    for (const item of arguments) {
+        newArr.push(item);
+    }
+    return newArr.join('-');
+}
+
+console.log(makeStrFromArr('this', 'time', 'I', 'want', 'some', 'cake'));
+
 // 1. Напиши функцію яка приймає два числа. Якщо одне з чисел дорівнює нулю то
 //    повернути null, в іншому випадку повернути добуток цих двох чисел.
+
+console.log('task 4');
+
+function checkNumbers(a, b) {
+    return a === 0 || b === 0 ? null : a * b;
+}
+
+console.log(checkNumbers(5, 6));
+console.log(checkNumbers(0, 8));
+console.log(checkNumbers(3, 0));
+
 // # Функції
 
 // 1. Напиши функцію, яка приймає два параметри (a і b) та повертає їхню суму.
