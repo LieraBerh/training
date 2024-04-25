@@ -97,3 +97,36 @@
 // alert(checkPassword(clientPassword, userName));
 
 
+//TODO:============task-05=========================
+// Написати функцію, яка приймає рядок і повертає кількість голосних літер у цьому рядку.
+
+// const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+// function countVowels(string) {
+//     let count = 0;
+//     for (const letter of string) {
+//         if (vowels.includes(letter.toLowerCase())) {
+//             count++
+//         }
+//     }
+//     return count;
+// }
+
+// console.log(countVowels('hello world test'));
+
+//TODO:============task-06=========================
+// Знайти перший парний елемент масиву, який більший за 10, використовуючи цикл for з оператором break та continue.
+
+// function findEven(array) {
+//     let evenNumber = 0;
+//     for (const number of array) {
+//        if (number % 2 !== 0) {
+//            continue;
+//        } else if (number % 2 === 0 && number > 10) {
+//            evenNumber += number;
+//            break;
+//     } 
+//     }
+//     return `First even number - ${evenNumber}`;
+// }
+// console.log(findEven([6, 7, 8, 9, 10, 11, 12, 13]));
