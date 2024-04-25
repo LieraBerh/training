@@ -125,8 +125,33 @@
 //        } else if (number % 2 === 0 && number > 10) {
 //            evenNumber += number;
 //            break;
-//     } 
+//     }
 //     }
 //     return `First even number - ${evenNumber}`;
 // }
 // console.log(findEven([6, 7, 8, 9, 10, 11, 12, 13]));
+
+const user = {
+  name: "Jacques Gluke",
+  tag: "jgluke",
+  location: {
+    country: "Jamaica",
+    city: "Ocho Rios",
+  },
+  hobbies: ["swimming", "music", "sci-fi"],
+};
+
+const location = user.location;
+console.log(location); // {country: "Jamaica", city: "Ocho Rios"}
+
+const country = user.location.country;
+console.log(country); // "Jamaica"
+
+const hobbies = user.hobbies;
+console.log(hobbies); // ["swimming", "music", "sci-fi"]
+
+const firstHobby = user.hobbies[0];
+console.log(firstHobby); // "swimming"
+
+const numberOfHobbies = user.hobbies.length;
+console.log(numberOfHobbies); // 3
