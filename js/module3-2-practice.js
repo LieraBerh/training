@@ -84,3 +84,16 @@
 // Присвой змінній isMatch вираз перевірки рівності введених і попередньо збережених паролів. Результатом виразу перевірки повинно бути true,
 // якщо значення збігаються, і false - якщо ні.
 
+// const clientPassword = prompt("Enter your password");
+// const userName = prompt("Enter your name");
+
+// function checkPassword(password, user) {
+//   const userPassword = "Admin";
+//   return userPassword === password
+//     ? `Hello admin ${user}`
+//     : `Access denied ${user}`;
+// }
+
+// alert(checkPassword(clientPassword, userName));
+
+
