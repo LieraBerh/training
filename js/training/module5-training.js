@@ -204,16 +204,6 @@ const cars = [
   },
 ];
 
-//  {
-//     brand: 'Toyota',
-//     model: 'Camry',
-//     year: 2019,
-//     color: 'Silver',
-//     price: 25000,
-//     amount: 3,
-//     isSportCar: false,
-//     type: 'Sedan',
-//   }
 
 // 1. Знайти авто зеленого кольору
 
@@ -226,10 +216,40 @@ const cars = [
 // console.table(findSportCars(cars));
 
 // 1. Порахувати кількість авто 2022 року
+
+// const countNewCars = (arr) => arr.reduce((total, car) => car.year === 2022 ? total + 1 : total, 0);
+
+// console.table(countNewCars(cars));
+
 // 1. Знайти всі машини з ціною вище 30000.
+
+// const findCars = (arr) => arr.filter(car => car.price > 30000);
+// console.table(findCars(cars));
+
 // 1. Знайти всі машини червоного кольору.
-// 1. Порахувати кількість машин 2022 року.
+
+// const findCars = (arr) => arr.filter(car => car.color.toLowerCase() === 'red');
+// console.table(findCars(cars));
+
 // 1. Відсортувати машини за роком випуску (від найстарішого до найновішого).
+
+//  {
+//     brand: 'Toyota',
+//     model: 'Camry',
+//     year: 2019,
+//     color: 'Silver',
+//     price: 25000,
+//     amount: 3,
+//     isSportCar: false,
+//     type: 'Sedan',
+//   }
+
+// const sortCars = (arr) => arr
+//   .map(car => car.year)
+//   .toSorted();
+
+//   console.log(sortCars(cars));
+
 // 1. Знайти найдорожчу машину.
 // 1. Знайти всі машини заданої марки (наприклад, Toyota).
 // 1. Порахувати загальну кількість машин усіх типів.
