@@ -5,52 +5,51 @@
 // функціональністю.
 
 class BankAccount {
+  static #bankName = 'Monobank';
+  #accountNumber;
+  #balance;
+  #ownerName;
 
-    static #bankName = 'Monobank';
-    #accountNumber;
-    #balance;
-    #ownerName;
+  constructor(params) {
+    this.#accountNumber = params.accountNumber;
+    this.#balance = params.balance;
+    this.#ownerName = params.ownerName;
+  }
 
-    constructor(params) {
-        this.#accountNumber = params.accountNumber;
-        this.#balance = params.balance;
-        this.#ownerName = params.ownerName;
-    }
-
-    getAccountInfo() {
-        return `Bank name: ${BankAccount.#bankName} \n
+  getAccountInfo() {
+    return `Bank name: ${BankAccount.#bankName} \n
                 Account number: ${this.#accountNumber} \n
                 Balance: ${this.#balance} \n
                 Account owner: ${this.#ownerName}`;
-    }
+  }
 
-    // get balance() {
-    //     return `Your balance is ${this.#balance} UAH`;
-    // }
+  // get balance() {
+  //     return `Your balance is ${this.#balance} UAH`;
+  // }
 
-    // set balance() {
+  // set balance() {
 
-    // }
+  // }
 
-    // get ownerName() {
+  // get ownerName() {
 
-    // }
+  // }
 
-    // set ownerName() {
+  // set ownerName() {
 
-    // }
+  // }
 
-    static setBankName(bankName) {
-        this.#bankName = bankName;
-    }
+  static setBankName(bankName) {
+    this.#bankName = bankName;
+  }
 
-    deposit(amount) {
-        this.#balance += amount;
-    }
+  deposit(amount) {
+    this.#balance += amount;
+  }
 
-    withdraw(amount) {
-        this.#balance -= amount;
-    }
+  withdraw(amount) {
+    this.#balance -= amount;
+  }
 }
 
 // 1. Створіть клас `BankAccount` з приватною статичною властивістю `bankName`, яке
@@ -94,12 +93,10 @@ class BankAccount {
 // BankAccount.setBankName('NewBank');
 // console.log(account.getAccountInfo());
 
-
 // У цій задачі використовуються статичні властивості, приватні властивості, гетери
 // та сеттери, щоб створити клас `BankAccount`, який представляє банківський
 // рахунок з функціональністю для внесення депозитів, зняття коштів, зміни імені
 // власника та виведення інформації про рахунок.
-
 
 // **Завдання для класу ToDoList: Управління завданнями**
 
